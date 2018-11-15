@@ -5,7 +5,7 @@ Actions.replaceAction("AcceptTask", (payload, original) => {
 
   if (externalScreenPop === "true") {
     const serviceNowDomain = typeof payload.task.attributes.serviceNowDomain !== undefined ? payload.task.attributes.serviceNowDomain : "";
-    const serviceNowParameters = typeof payload.task.attributes.serviceNowParameters !== undefined ? payload.task.attributes.serviceNowDomain : "";
+    const serviceNowParameters = typeof payload.task.attributes.serviceNowParameters !== undefined ? payload.task.attributes.serviceNowParameters : "";
 
     if (serviceNowDomain !== undefined && serviceNowParameters !== undefined) {
       window.open(`${serviceNowDomain}/cti.do?${serviceNowParameters}`, '_blank');
