@@ -1,0 +1,13 @@
+[
+  {
+    "name": "ServiceNowPlugin",
+    "version": "0.0.0",
+    "class": "ServiceNowPlugin",
+    "requires": [
+      {
+        "@twilio/flex-ui": "^1.0.0"
+      }
+    ],
+    "src": "http://localhost:8080/plugin-serviceNow.js"
+  }
+]
